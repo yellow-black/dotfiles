@@ -1,8 +1,9 @@
 #################
-# eza
+# alias 
 #################
 
 alias ls="eza --icons"
+alias vim="helix"
 
 ################
 # starship
