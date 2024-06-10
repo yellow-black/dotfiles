@@ -1,3 +1,6 @@
 function fish_greeting
-    screenfetch
+    switch (uname)
+    case Linux
+        screenfetch
+    end
 end
