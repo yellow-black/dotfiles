@@ -1,6 +1,9 @@
+starship init fish | source
+
 #################
-# alias 
+# alias
 #################
 
+alias fd="fdfind"
 alias ls="eza --icons"
 

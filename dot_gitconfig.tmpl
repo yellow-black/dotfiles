@@ -1,8 +1,11 @@
 [user]
-    name = s-takano
-    email = ""
+    email = 19802528+yellow-black@users.noreply.github.com
+    name = s.t
+
 [core]
+    pager = delta
     editor = vim
+
 [color]
     status = auto
     branch = auto
@@ -10,47 +13,19 @@
     diff = auto
 [alias]
     st = status
-    last = log -1 HEAD
-    br = branch
-
-    co = checkout
-    # Checkout previous checked out branch
-    cp = checkout -
-
-    ci = commit
-
-    # Get username
-    username = config --get user.name
-
-    # Find $1 in the code even if it was deleted
-    find = "!f() { git log -S ${1} --source --all; }; f"
-
-    # Unstage staged changes
-    unstage = reset HEAD --
-
-    # Colorful log with graph
-    lg = "!f() { git log ${1-$(git currentbranch)} --color --graph --pretty=format:'%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -- ; }; f"
-
-    # Colorful log showing number of added and deleted lines on each file per commit
-    ll = log --color --pretty=format:'%C(bold red)%h%C(yellow)%d %Creset%s %C(green)(%cr) %C(bold blue)<%an>' --numstat
-
-    c = clone --recursive
-
-    d = diff
-    ds = diff --staged
-
     # Amend last commit without modifying commit message
     amend = "!git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend"
 
-    # Show all aliases
-    aliases = config --get-regexp alias
+[interactive]
+    diffFilter = delta --color-only
 
-    # Find $1 in commits (search HEAD if empty)
-    fb = "!f() { git branch -a --contains $1; }; f"
-[pull]
-    ff = only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+
 [merge]
     ff = false
+
 [rebase]
     autostash = true
     autosquash = true
