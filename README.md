@@ -12,6 +12,12 @@
 sudo snap install chezmoi --classic
 ```
 
+#### Windows
+
+```pwsh
+winget install twpayne.chezmoi
+```
+
 - [Git](https://www.git-scm.com/)
 
 ### Init
