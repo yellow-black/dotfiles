@@ -1,0 +1,11 @@
+{{- if eq .chezmoi.os "windows" -}}
+#!/usr/bin/env pwsh -NoProfile
+
+winget install Microsoft.WindowsTerminal
+
+winget install Starship.Starship
+winget install Fastfetch-cli.Fastfetch
+winget install eza-community.eza
+winget install dandavison.delta
+
+{{- end }}
