@@ -6,4 +6,4 @@ starship init fish | source
 
 alias fd="fdfind"
 alias ls="eza --icons"
-
+alias cat="batcat"
