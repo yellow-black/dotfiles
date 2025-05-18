@@ -6,3 +6,5 @@ function eza-icons {
 }
 
 Set-Alias -Name ls -Value eza-icons
+
+Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
