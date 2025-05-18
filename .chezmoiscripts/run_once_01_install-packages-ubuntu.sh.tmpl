@@ -19,7 +19,6 @@ sudo apt install -y fastfetch
 # Install starship (https://starship.rs/)
 curl -sS https://starship.rs/install.sh | sh -s -- --yes
 
-# モダンなコマンドラインツール
 sudo apt install -y \
     # https://github.com/ajeetdsouza/zoxide
     zoxide \
@@ -28,7 +27,9 @@ sudo apt install -y \
     # https://github.com/eza-community/eza
     eza \
     # https://github.com/sharkdp/bat
-    bat
+    bat \
+    # https://github.com/dandavison/delta
+    git-delta
 
 # https://github.com/dalance/procs
 sudo snap install procs
