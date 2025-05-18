@@ -16,9 +16,6 @@ sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
 sudo apt update
 sudo apt install -y fastfetch
 
-# Install starship (https://starship.rs/)
-curl -sS https://starship.rs/install.sh | sh -s -- --yes
-
 sudo apt install -y \
     # https://github.com/ajeetdsouza/zoxide
     zoxide \
@@ -39,6 +36,9 @@ sudo apt install -y \
 sudo snap install procs
 # https://github.com/bootandy/dust
 sudo snap install dust
+
+# Install starship (https://starship.rs/)
+curl -sS https://starship.rs/install.sh | sh -s -- --yes
 
 {{ end }}
 {{- end -}}
