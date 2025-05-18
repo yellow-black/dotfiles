@@ -5,4 +5,4 @@ function eza-icons {
     eza --icons $args
 }
 
-Set-Alias --name ls --value eza-icons
+Set-Alias -Name ls -Value eza-icons
