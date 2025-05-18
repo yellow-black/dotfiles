@@ -1,0 +1,88 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{ecd812cf-8694-592e-a936-995bfa3f39f6}",
+    "keybindings": [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "launchMode": "maximized",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "adjustIndistinguishableColors": "always",
+            "cursorShape": "filledBox",
+            "font": {
+                "face": "Cascadia Code NF",
+                "features": {
+                    "rlig": 1,
+                    "ss02": 1,
+                    "ss19": 1,
+                    "ss20": 1
+                }
+            }
+        },
+        "list": [
+            {
+                "colorScheme": "Campbell Powershell",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe  /nologo ",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{ecd812cf-8694-592e-a936-995bfa3f39f6}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Campbell Powershell",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe  /nologo",
+                "elevate": true,
+                "font": {
+                    "face": "Cascadia Code NF",
+                    "size": 12
+                },
+                "guid": "{d16c1a74-7b8a-4e39-bcda-c02c1cc6ce26}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "name": "Windows PowerShell (Admin)",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": false
+            }
+        ]
+    },
+    "schemes": [],
+    "startOnUserLogin": true,
+    "themes": []
+}
