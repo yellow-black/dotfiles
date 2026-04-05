@@ -1,0 +1,25 @@
+[[opener.bulk-rename]]
+run   = 'code --wait --profile "Bulk Rename" %s'
+block = true
+
+[[open.prepend_rules]]
+url = "bulk-rename.txt"
+use = "bulk-rename"
+
+[[opener.cbz-win-default]]
+run    = 'cmd.exe /C start "" "$(wslpath -w %s1)"'
+orphan = true
+desc   = "Open CBZ in Windows" 
+
+[[open.prepend_rules]]
+url = "*.cbz"
+use = "cbz-win-default"
+
+[plugin]
+prepend_preloaders = [
+  { url = "*.cbz", run = "preview-cbz" },
+]
+
+prepend_previewers = [
+  { url = "*.cbz", run = "preview-cbz" },
+]
