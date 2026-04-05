@@ -1,7 +1,2 @@
 README.md
 .git/
-
-{{- if ne .chezmoi.os "windows" }}
-Documents/
-AppData/
-{{- end }}
