@@ -9,5 +9,5 @@
 
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = "*",
-  command = "silent! zenhan.exe 0",
+  command = "silent! !zenhan.exe 0",
 })
