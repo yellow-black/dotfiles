@@ -2,14 +2,10 @@
 
 ## Installation
 
-### Prerequisites
-
-- [chezmoi](https://www.chezmoi.io/)
-
-#### Ubuntu
+### Install chezmoi
 
 ```sh
-sudo snap install chezmoi --classic
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
 ```
 
 ### Init
