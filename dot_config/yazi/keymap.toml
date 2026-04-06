@@ -22,3 +22,13 @@ desc = "Go to Windows Downloads"
 on = "r"
 run = "bulk_rename"
 desc = "Rename selected file(s)"
+
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = [ "close", "plugin ime-off" ]
+desc = "Cancel input and turn IME off"
+
+[[input.prepend_keymap]]
+on   = "<Enter>"
+run  = [ "close --submit", "plugin ime-off" ]
+desc = "Submit input and turn IME off"
