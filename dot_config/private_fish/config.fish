@@ -4,3 +4,4 @@ set -gx VISUAL code
 alias fd="fdfind"
 alias ls="eza --icons"
 alias cat="batcat"
+alias lg="lazygit"
