@@ -26,7 +26,7 @@
     line-numbers = true
 
 [merge]
-    ff = false
+    ff = true
 
 [rebase]
     autostash = true
