@@ -23,6 +23,11 @@ on = "r"
 run = "bulk_rename"
 desc = "Rename selected file(s)"
 
+[[mgr.prepend_keymap]]
+on = "R"
+run = "rename --hovered"
+desc = "Rename hovered file"
+
 [[input.prepend_keymap]]
 on   = "<Esc>"
 run  = [ "close", "plugin ime-off" ]
