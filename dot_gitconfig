@@ -12,11 +12,6 @@
     interactive = auto
     diff = auto
 
-[alias]
-    st = status
-    # Amend last commit without modifying commit message
-    amend = "!git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend"
-
 [interactive]
     diffFilter = delta --color-only
 
