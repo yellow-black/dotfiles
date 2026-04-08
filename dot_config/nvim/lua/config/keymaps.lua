@@ -12,6 +12,12 @@ map("i", "jk", "<ESC>", { desc = "Exit insert mode" })
 map("n", "o", "o<Esc>", opts)
 map("n", "O", "O<Esc>", opts)
 
+-- Move in Insert mode
+map("i", "<C-h>", "<Left>", opts)
+map("i", "<C-j>", "<Down>", opts)
+map("i", "<C-k>", "<Up>", opts)
+map("i", "<C-l>", "<Right>", opts)
+
 if vim.g.vscode then
   map("n", "<leader>e", function()
     require("vscode").action("workbench.view.explorer")
