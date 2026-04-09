@@ -5,6 +5,13 @@ return {
       servers = {
         ruff = {},
         ty = {},
+        copilot = {
+          settings = {
+            telemetry = {
+              telemetryLevel = "off",
+            }
+          }
+        }
       },
     },
   },
