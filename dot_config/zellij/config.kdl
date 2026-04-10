@@ -276,10 +276,32 @@ web_client {
 // 
 // osc8_hyperlinks true
  
+themes {
+    tokyo-night-moon {
+        // fg 200 211 245
+        // NeoVim の Normal モードの表示色と揃える
+        fg 130 170 255
+        bg 34 36 54
+        // black 27 29 43
+        // タブバーとステータスバーを背景色と揃える
+        black 34 36 54
+        red 255 117 127
+        green 195 232 141
+        yellow 255 199 119
+        blue 130 170 255
+        magenta 192 153 255
+        cyan 134 225 252
+        white 130 139 184
+        // orange 255 150 108
+        // Primary Modifier と Secondary Modifier の色を揃える
+        orange 192 153 255
+    }
+}
+
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "tokyo-night-storm"
+theme "tokyo-night-moon"
  
 // Choose the base input mode of zellij.
 // Default: normal
