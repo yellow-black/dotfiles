@@ -27,5 +27,7 @@ fish_vi_key_bindings
 
 if set -q ZELLIJ
 else
-    zellij
+    if status is-interactive
+        zellij
+    end
 end
