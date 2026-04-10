@@ -1,28 +1,29 @@
 [user]
-    email = 19802528+yellow-black@users.noreply.github.com
-    name = s.t
+  email = 19802528+yellow-black@users.noreply.github.com
+  name = s.t
 
 [core]
-    pager = delta
-    editor = nvim
+  pager = delta
+  editor = nvim
 
 [color]
-    status = auto
-    branch = auto
-    interactive = auto
-    diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  diff = auto
 
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 
 [delta]
-    navigate = true
-    dark = true
-    line-numbers = true
+  navigate = true
+  dark = true
+  line-numbers = true
 
 [merge]
-    ff = true
+  ff = true
+  conflictStyle = zdiff3
 
 [rebase]
-    autostash = true
-    autosquash = true
+  autostash = true
+  autosquash = true
