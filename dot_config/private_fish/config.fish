@@ -23,6 +23,14 @@ alias ls="eza --icons"
 alias cat="batcat"
 alias lg="lazygit"
 
+# WSL 向けの設定
+if set -q WSL_INTEROP
+    set -gx WINHOME (wslpath (powershell.exe -NoProfile "\$env:USERPROFILE" | string trim))
+
+    abbr -a win "cd $WINHOME"
+    abbr -a downloads "cd $WINHOME/Downloads"
+end
+
 # fish_vi_key_bindings
 
 if set -q ZELLIJ
