@@ -23,7 +23,7 @@ alias ls="eza --icons"
 alias cat="batcat"
 alias lg="lazygit"
 
-fish_vi_key_bindings
+# fish_vi_key_bindings
 
 if set -q ZELLIJ
 else
