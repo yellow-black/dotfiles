@@ -19,6 +19,8 @@ abbr -a gp git push
 abbr -a gl 'git log --oneline --graph --decorate'
 abbr -a gd git diff
 
+abbr -a ff fastfetch
+
 alias fd="fdfind"
 alias ls="eza --icons"
 alias lt="eza --icons --tree"
