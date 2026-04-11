@@ -1,3 +1,6 @@
+[manager]
+show_hidden = true
+
 [[opener.bulk-rename]]
 # run   = 'code --wait --profile "Bulk Rename" %s'
 run   = "nvim %s"
