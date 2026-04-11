@@ -1,6 +1,7 @@
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
+abbr -a n nvim
 abbr -a v nvim
 abbr -a vi nvim
 abbr -a vim nvim
@@ -20,6 +21,7 @@ abbr -a gd git diff
 
 alias fd="fdfind"
 alias ls="eza --icons"
+alias lt="eza --icons --tree"
 alias cat="batcat"
 alias lg="lazygit"
 
@@ -29,10 +31,20 @@ if set -q WSL_INTEROP
 
     abbr -a win "cd $WINHOME"
     abbr -a downloads "cd $WINHOME/Downloads"
+
+    function o --description 'Open a file or directory with the default Windows application'
+        if not set -q argv[1]
+            echo "Usage: o <file-or-directory>"
+            return 1
+        end
+        set -l path (wslpath -w (realpath $argv[1]))
+        powershell.exe -NoProfile "Start-Process '$path'"
+    end
 end
 
 # fish_vi_key_bindings
 
+abbr -a zj zellij
 if set -q ZELLIJ
 else
     if status is-interactive
