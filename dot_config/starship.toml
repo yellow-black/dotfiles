@@ -4,6 +4,7 @@ format = """
 [╭](fg:overlay0)\
 $os\
 $status\
+$jobs\
 $directory\
 $git_branch\
 $git_status\
@@ -162,6 +163,13 @@ pipestatus_segment_format = "$status"
 pipestatus_format = "[─](fg:overlay0)[](fg:red)[ ](fg:text bg:red)[](fg:red bg:base)[ $pipestatus](fg:text bg:base)[](fg:base)"
 disabled = false
 
+# Sky
+[jobs]
+format = "[-](fg:overlay0)[](fg:sky)[$symbol](fg:surface1 bg:sky)[](fg:sky)[ $number](fg:text bg:base)[](fg:base)"
+symbol = "󰣖"
+number_threshold = 1
+disabled = false
+
 # Blue
 [directory]
 format = '[─](fg:overlay0)[](fg:blue)[](fg:surface1 bg:blue)[](fg:blue bg:base)[ $read_only$truncation_symbol$path](fg:text bg:base)[](fg:base)'
@@ -213,7 +221,7 @@ disabled = false
 # Mauve
 [username]
 format = '[─](fg:overlay0)[](fg:mauve)[](fg:surface1 bg:mauve)[](fg:mauve bg:base)[ $user](fg:text bg:base)[](fg:base) '
-show_always = true
+show_always = false
 
 # Rosewater
 [custom.nordvpn]
