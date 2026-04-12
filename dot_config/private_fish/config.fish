@@ -1,6 +1,10 @@
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
+if not status is-interactive
+    return
+end
+
 abbr -a n nvim
 abbr -a v nvim
 abbr -a vi nvim
@@ -49,7 +53,5 @@ end
 abbr -a zj zellij
 if set -q ZELLIJ
 else
-    if status is-interactive
-        zellij
-    end
+    zellij
 end
