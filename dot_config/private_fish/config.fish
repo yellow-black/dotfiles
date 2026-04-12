@@ -8,6 +8,8 @@ end
 fish_config theme choose catppuccin-mocha --color-theme=dark
 
 abbr -a n nvim
+abbr -a nv nvim
+abbr -a nvi nvim
 abbr -a v nvim
 abbr -a vi nvim
 abbr -a vim nvim
@@ -16,6 +18,9 @@ abbr -a py python
 abbr -a ipy ipython
 
 abbr -a g git
+abbr --command git co checkout
+abbr --command git st status
+
 abbr -a gs git status
 abbr -a ga git add
 abbr -a gc git commit
@@ -25,12 +30,21 @@ abbr -a gp git push
 abbr -a gl 'git log --oneline --graph --decorate'
 abbr -a gd git diff
 
+abbr -a cz chezmoi
+abbr --command chezmoi a add
+abbr -a cza chezmoi add
+abbr -a czc chezmoi cd
+abbr -a cze chezmoi edit
+
+abbr -a j just
+
 abbr -a ff fastfetch
 
 alias fd="fdfind"
 alias ls="eza --icons"
 alias lt="eza --icons --tree"
 alias cat="batcat"
+alias bat="batcat"
 alias lg="lazygit"
 
 # WSL 向けの設定
