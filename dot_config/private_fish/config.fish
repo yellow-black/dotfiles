@@ -18,8 +18,8 @@ abbr -a py python
 abbr -a ipy ipython
 
 abbr -a g git
-abbr --command git co checkout
-abbr --command git st status
+abbr -a --command git co checkout
+abbr -a --command git st status
 
 abbr -a gs git status
 abbr -a ga git add
@@ -31,7 +31,9 @@ abbr -a gl 'git log --oneline --graph --decorate'
 abbr -a gd git diff
 
 abbr -a cz chezmoi
-abbr --command chezmoi a add
+abbr -a --command chezmoi a add
+abbr -a --command chezmoi c cd
+abbr -a --command chezmoi e edit
 abbr -a cza chezmoi add
 abbr -a czc chezmoi cd
 abbr -a cze chezmoi edit
@@ -45,7 +47,10 @@ alias ls="eza --icons"
 alias lt="eza --icons --tree"
 alias cat="batcat"
 alias bat="batcat"
-alias lg="lazygit"
+abbr -a lg lazygit
+abbr -a --command lazygit -- c "-p (chezmoi source-path)"
+abbr -a --command lazygit -- cz "-p (chezmoi source-path)"
+abbr -a lgc lazygit -p (chezmoi source-path)
 
 # WSL 向けの設定
 if set -q WSL_INTEROP
