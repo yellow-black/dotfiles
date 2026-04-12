@@ -5,6 +5,8 @@ if not status is-interactive
     return
 end
 
+fish_config theme choose catppuccin-mocha --color-theme=dark
+
 abbr -a n nvim
 abbr -a v nvim
 abbr -a vi nvim
