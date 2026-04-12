@@ -18,6 +18,7 @@ $zig\
 $rust\
 $c\
 $cmd_duration\
+$custom\
 $time\
 $username\
 $line_break\
@@ -143,6 +144,7 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
+# Teal
 [os]
 format = "[](fg:teal)[$symbol](fg:surface1 bg:teal)[](fg:teal)"
 disabled = false
@@ -151,28 +153,31 @@ disabled = false
 Windows = ""
 Ubuntu = ""
 
+# Red
 [status]
-format = "[─](fg:overlay0)[](fg:red)[](fg:surface1 bg:red)[](fg:red bg:base)[ $status](fg:text bg:base)[](fg:base)"
+format = "[─](fg:overlay0)[](fg:red)[ ](fg:surface1 bg:red)[](fg:red bg:base)[ $status](fg:text bg:base)[](fg:base)"
 pipestatus = true
 pipestatus_separator = "-"
 pipestatus_segment_format = "$status"
-pipestatus_format = "[─](fg:overlay0)[](fg:red)[](fg:text bg:red)[](fg:red bg:base)[ $pipestatus](fg:text bg:base)[](fg:base)"
+pipestatus_format = "[─](fg:overlay0)[](fg:red)[ ](fg:text bg:red)[](fg:red bg:base)[ $pipestatus](fg:text bg:base)[](fg:base)"
 disabled = false
 
+# Blue
 [directory]
-format = '[─](fg:overlay0)[](fg:blue)[](fg:surface1 bg:blue)[](fg:blue bg:base)[ $read_only$truncation_symbol$path](fg:text bg:base)[](fg:base)'
-home_symbol = " ~/"
-truncation_symbol = ' '
+format = '[─](fg:overlay0)[](fg:blue)[](fg:surface1 bg:blue)[](fg:blue bg:base)[ $read_only$truncation_symbol$path](fg:text bg:base)[](fg:base)'
+home_symbol = "~"
+truncation_symbol = ""
 truncation_length = 2
-read_only = '󱧵 '
-read_only_style = ''
+read_only = ""
+read_only_style = ""
 
+# Peach
 [git_branch]
-format = '[─](fg:overlay0)[](fg:green)[$symbol](fg:surface1 bg:green)[](fg:green bg:base)[ $branch](fg:text bg:base)'
-symbol = ''
+format = '[─](fg:overlay0)[](fg:peach)[$symbol](fg:surface1 bg:peach)[](fg:peach bg:base)[ $branch](fg:text bg:base)'
+symbol = "󰊢"
 
 [git_status]
-format = '[$all_status](fg:green bg:base)[](fg:base)'
+format = '[$all_status](fg:peach bg:base)[](fg:base)'
 conflicted = ' ='
 up_to_date = ''
 untracked = ' ?${count}'
@@ -185,26 +190,37 @@ ahead = ' ⇡${count}'
 diverged = ' ⇕⇡${ahead_count}⇣${behind_count}'
 behind = ' ⇣${count}'
 
+# Yellow
 [python]
-format = '[─](fg:overlay0)[](fg:green)[$symbol](fg:surface1 bg:green)[](fg:green bg:base)[ (${version})(\($virtualenv\))](fg:text bg:base)[](fg:base)'
+format = '[─](fg:overlay0)[](fg:yellow)[$symbol](fg:surface1 bg:yellow)[](fg:yellow bg:base)[ (${version})(\($virtualenv\))](fg:text bg:base)[](fg:base)'
 symbol = ''
 
 [fill]
 symbol = '─'
 style = 'fg:overlay0'
 
+# Maroon
 [cmd_duration]
 min_time = 500
-format = '[─](fg:overlay0)[](fg:peach)[](fg:surface1 bg:peach)[](fg:peach bg:base)[ $duration](fg:text bg:base)[](fg:base)'
+format = '[─](fg:overlay0)[](fg:maroon)[󱦟](fg:surface1 bg:maroon)[](fg:maroon bg:base)[ $duration](fg:text bg:base)[](fg:base)'
 
+# Lavender
 [time]
-format = '[─](fg:overlay0)[](fg:lavender)[󰦖](fg:surface1 bg:lavender)[](fg:lavender bg:base)[ $time](fg:text bg:base)[](fg:base)'
+format = '[─](fg:overlay0)[](fg:lavender)[󰅐](fg:surface1 bg:lavender)[](fg:lavender bg:base)[ $time](fg:text bg:base)[](fg:base)'
 time_format = '%H:%M'
 disabled = false
 
+# Mauve
 [username]
-format = '[─](fg:overlay0)[](fg:yellow)[](fg:surface1 bg:yellow)[](fg:yellow bg:base)[ $user](fg:text bg:base)[](fg:base) '
+format = '[─](fg:overlay0)[](fg:mauve)[](fg:surface1 bg:mauve)[](fg:mauve bg:base)[ $user](fg:text bg:base)[](fg:base) '
 show_always = true
+
+# Rosewater
+[custom.nordvpn]
+# symbol = "󰖟"
+symbol = "󰠥"
+format = '[─](fg:overlay0)[](fg:rosewater)[$symbol](fg:surface1 bg:rosewater)[](fg:rosewater)'
+when = "nordvpn_status"
 
 [character]
 format = """
