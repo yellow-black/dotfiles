@@ -235,6 +235,3 @@ format = """
 [╰─$symbol](fg:overlay0) """
 success_symbol = '[](fg:bold white)'
 error_symbol = '[×](fg:bold red)'
-
-[profiles]
-transient = """$character"""
