@@ -229,6 +229,7 @@ show_always = false
 symbol = "󰠥"
 format = '[─](fg:overlay0)[](fg:rosewater)[$symbol](fg:surface1 bg:rosewater)[](fg:rosewater)'
 when = "nordvpn_status"
+ignore_timeout = true
 
 [character]
 format = """
