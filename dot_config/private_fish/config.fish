@@ -20,6 +20,8 @@ abbr -a ipy ipython
 abbr -a g git
 abbr -a --command git co checkout
 abbr -a --command git st status
+abbr -a --command git br branch
+abbr -a --command git sw switch
 
 abbr -a gs git status
 abbr -a ga git add
@@ -31,7 +33,6 @@ abbr -a gl 'git log --oneline --graph --decorate'
 abbr -a gd git diff
 
 abbr -a cz chezmoi
-abbr -a --command chezmoi a add
 abbr -a --command chezmoi c cd
 abbr -a --command chezmoi e edit
 abbr -a cza chezmoi add
