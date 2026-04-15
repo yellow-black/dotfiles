@@ -33,6 +33,7 @@ abbr -a gl 'git log --oneline --graph --decorate'
 abbr -a gd git diff
 
 abbr -a cz chezmoi
+abbr -a ch chezmoi
 abbr -a --command chezmoi c cd
 abbr -a --command chezmoi e edit
 abbr -a cza chezmoi add
@@ -73,7 +74,7 @@ end
 # fish_vi_key_bindings
 
 abbr -a zj zellij
-if set -q ZELLIJ
-else
-    zellij
-end
+# if set -q ZELLIJ
+# else
+#     zellij
+# end
